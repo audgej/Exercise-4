@@ -1,0 +1,19 @@
+york_county_dict = {'york': 2000, 'rock hill': 4000, 'lake wylie': 3500, 'fort mill': 4050,'newport': 2050}
+pickens_county_dict = {'six mile': 3242, 'easley': 8584, 'pickens': 7489, 'sunset': 8374,'pumpkintown': 4783}
+anderson_county_dict = {'belton': 5782, 'anderson': 2378, 'pendleton': 7392, 'piedmont': 3628,'powdersville': 1038}
+greenville_county_dict = {'greenville': 7539, 'fountain in': 4200, 'simpsonville': 7284, 'taylors': 6249,'cowpens': 1234}
+aiken_county_dict = {'aiken': 3738, 'graniteville': 4030, 'windsor': 3502, 'new ellington': 4965,'warrenville': 2940}
+
+sc_counties_listofdicts = [york_county_dict,]
+print(sc_counties_listofdicts)
+
+for county in sc_counties_listofdicts:
+    for city, population in county.items():
+        print(f"in {city.title()}, the current population is {population}")
+
+
+sc_counties = {'anderson county':['anderson','belton','pendleton'], 'greenville county':['greenville','taylors','maudlin'],
+               'pickens county':['pickens','six mile','sunset'], 'aiken county':['aiken','graniteville','windsor'],
+               'spartanburg county':['spartanburg','lyman','duncan']}
+for county, city in sc_counties.items():
+    print(f"In {county.title()}, the largest cities are {city[0].title(),city[1].title(),city[2].title()}")
