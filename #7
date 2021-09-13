@@ -1,0 +1,17 @@
+sc_counties_dict = {
+    'york county':'york',
+    'pickens county':'pickens',
+    'richland county':'columbia',
+    'saluda county':'saluda',
+    'spartanburg county':'spartanburg',
+    'sumter county':'sumter',
+}
+sc_counties_list = ['oconee county','spartanburg county','richland county','lee county','laurens county','york county','pickens county','saluda county','sumter county','newberry county']
+
+york_cities = ['rock hill','lake wylie','fort mill','york','newport']
+
+for city in york_cities:
+    if city in sc_counties_dict.values():
+        print(f"{city.title()} is the capital of York County")
+    else:
+        print(f"{city.title()} is not the county seat of any county")
