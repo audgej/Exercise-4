@@ -1,0 +1,17 @@
+sc_counties_dict = {
+    'york county':'york',
+    'pickens county':'pickens',
+    'richland county':'columbia',
+    'saluda county':'saluda',
+    'spartanburg county':'spartanburg',
+    'sumter county':'sumter',
+}
+sc_counties_list = ['oconee county','spartanburg county','richland county','lee county','laurens county','york county','pickens county','saluda county','sumter county','newberry county']
+
+for county in sc_counties_list:
+    if county in sc_counties_dict:
+        print(f"{county.title()} is in our dictionary, the captial is {sc_counties_dict[county].title()}.")
+        print('')
+    else:
+        print(f"{county.title()} is not in our dictionary. We will add this county shortly.")
+        print('')
